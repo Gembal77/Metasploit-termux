@@ -12,4 +12,5 @@ chmod +x metasploit.sh
 
 ./metasploit.sh
 
-Jalankan: msfconsole
+
+msfconsole
