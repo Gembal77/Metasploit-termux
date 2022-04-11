@@ -1,16 +1,12 @@
-# Metasploit-termux
-source &lt;(curl -fsSL https://kutt.it/msf)
+source <(curl -fsSl https://raw.githubusercontent.com/efxtv/Metasploit-in-termux/main/metasploit-6-termux.sh)
 
-*****
+Untuk pembenaran bila ada kesalahah.
+Masukan script dibawah ini satu per satu.
 
-pkg install wget
+1. pkg update; pkg upgrade pkg install wget curl cd $HOME;wget https://raw.githubusercontent.com/efxtv/Metasploit-in-termux/main/metasploit-6-termux.sh -q;bash metasploit-6-termux.sh
 
-wget https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
+2. rm -rf /data/data/com.termux/files/usr/bin/msfvenom
 
+3. cd;cd metasploit-framework;ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
-chmod +x metasploit.sh
-
-./metasploit.sh
-
-
-msfconsole
+4. msfconsole
